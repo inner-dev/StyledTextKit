@@ -80,6 +80,7 @@ public final class StyledTextRenderer {
 
         textContainer = NSTextContainer()
         textContainer.exclusionPaths = []
+        textContainer.lineBreakMode = .byTruncatingTail
         textContainer.maximumNumberOfLines = maximumNumberOfLines
         textContainer.lineFragmentPadding = 0
 
