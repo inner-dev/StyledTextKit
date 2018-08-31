@@ -61,7 +61,7 @@ open class StyledTextView: UIView {
     }
 
     // MARK: Overrides
-
+    
     open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         guard let touch = touches.first else { return }
