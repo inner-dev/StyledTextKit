@@ -1,16 +1,23 @@
 PODS:
-  - StyledTextKit (0.1.1)
+  - SnapKit (4.0.1)
+  - StyledTextKit (0.2.0)
 
 DEPENDENCIES:
+  - SnapKit (~> 4.0.0)
   - StyledTextKit (from `../StyledTextKit.podspec`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SnapKit
 
 EXTERNAL SOURCES:
   StyledTextKit:
     :path: "../StyledTextKit.podspec"
 
 SPEC CHECKSUMS:
-  StyledTextKit: 7fb706b7dce1bf5adcf7df6054b5c321b94ebfc0
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  StyledTextKit: 58b66dc194b29aca6b9669b73eeac1c5e88fb657
 
-PODFILE CHECKSUM: cce33de777ba45b96bae71bcdc8c7705f353b112
+PODFILE CHECKSUM: 3c3f3828968b9bc48522993c06aa167e8166e108
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.6.0.beta.1

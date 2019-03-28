@@ -15,6 +15,8 @@
 		099226C520D28A450002EBDA /* BudingAttributedStringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099226C420D28A450002EBDA /* BudingAttributedStringViewController.swift */; };
 		099226C720D28CA60002EBDA /* RenderingTextBitmapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099226C620D28CA60002EBDA /* RenderingTextBitmapsViewController.swift */; };
 		099226CB20D2950A0002EBDA /* BackgroundRenderingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099226CA20D2950A0002EBDA /* BackgroundRenderingViewController.swift */; };
+		0AE336CE224C85340025C1F3 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE336CD224C85340025C1F3 /* SnapKit.framework */; };
+		0AE336D0224C9DD80025C1F3 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE336CF224C9DD80025C1F3 /* TextViewController.swift */; };
 		2958DCFB20F28DED00A2CE81 /* FastScrollingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2958DCFA20F28DED00A2CE81 /* FastScrollingTableViewController.swift */; };
 		578C0B23B8D7C8CE6687BB7F /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2C7EA4A15739B6A51CF1F4 /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
@@ -31,6 +33,8 @@
 		099226C420D28A450002EBDA /* BudingAttributedStringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudingAttributedStringViewController.swift; sourceTree = "<group>"; };
 		099226C620D28CA60002EBDA /* RenderingTextBitmapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderingTextBitmapsViewController.swift; sourceTree = "<group>"; };
 		099226CA20D2950A0002EBDA /* BackgroundRenderingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundRenderingViewController.swift; sourceTree = "<group>"; };
+		0AE336CD224C85340025C1F3 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AE336CF224C9DD80025C1F3 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		2958DCFA20F28DED00A2CE81 /* FastScrollingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastScrollingTableViewController.swift; sourceTree = "<group>"; };
 		2A2C7EA4A15739B6A51CF1F4 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A065BF1E1909BCEFA4A18FF1 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AE336CE224C85340025C1F3 /* SnapKit.framework in Frameworks */,
 				578C0B23B8D7C8CE6687BB7F /* Pods_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +84,7 @@
 				099226C620D28CA60002EBDA /* RenderingTextBitmapsViewController.swift */,
 				099226CA20D2950A0002EBDA /* BackgroundRenderingViewController.swift */,
 				2958DCFA20F28DED00A2CE81 /* FastScrollingTableViewController.swift */,
+				0AE336CF224C9DD80025C1F3 /* TextViewController.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 		98CF61885F2FA1AFB2CE985D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0AE336CD224C85340025C1F3 /* SnapKit.framework */,
 				2A2C7EA4A15739B6A51CF1F4 /* Pods_Example.framework */,
 			);
 			name = Frameworks;
@@ -193,16 +200,18 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/StyledTextKit/StyledTextKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StyledTextKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -217,6 +226,7 @@
 				099226B520D286950002EBDA /* ViewController.swift in Sources */,
 				2958DCFB20F28DED00A2CE81 /* FastScrollingTableViewController.swift in Sources */,
 				099226CB20D2950A0002EBDA /* BackgroundRenderingViewController.swift in Sources */,
+				0AE336D0224C9DD80025C1F3 /* TextViewController.swift in Sources */,
 				099226B320D286950002EBDA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
